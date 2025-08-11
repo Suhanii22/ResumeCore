@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* @page {
+  size: A4;
+  margin: 0;
+} */
+        .border {
+            border: 2px solid red;
+        }
+        body{
+            margin: 0;
+        }
+
+        .resbody {
+              width: 210mm;
+  min-height: 297mm;
+   /* margin: 0 auto; */
+  /* padding: 20mm; */
+  box-sizing: border-box;
+                /* height: 70vh; */
+    /* width: 580px;
+    height: 740px; */
+    /* overflow: auto; */
+   
+        }
+        /* .resbody::-webkit-scrollbar{
+            display: none;
+        } */
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .first-name {
+            /* margin: 0 auto; */
+            padding: 16px;
+    font-size: 44px;
+    font-weight: bold;
+            padding: 10px;
+        }
+
+        .first-line {
+            border: 2px solid rgb(15, 15, 14);
+            width: 100%
+                /* margin: 0 20px; */
+        }
+
+        .first-details ul {
+            font-size: 18px;
+            display: flex;
+            /* list-style-type: none; */
+            padding: 0;
+            gap: 20px;
+            margin: 5px;
+              flex-wrap: wrap; /* allow wrapping */
+  justify-content: center; /* optional */
+  max-width: 100%;
+  overflow-wrap: break-word;
+        }
+
+        .second {
+            padding: 20px;
+        }
+
+        .second-name {
+            padding: 4px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .second-details {
+            font-size: 18px;
+             word-wrap: break-word;   /* Break long words if needed */
+  white-space: pre-wrap;   /* Respect line breaks */
+  overflow-wrap: break-word;
+        }
+
+        .third {
+            padding: 20px;
+        }
+
+        .third-name {
+            padding: 4px;
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .third-details ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px 20px;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+
+        .fourth {
+            padding: 20px;
+        }
+
+        .fourth-name {
+            padding: 5px;
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .fourth-details ul {
+            flex-wrap: wrap;
+            gap: 3px 20px;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+
+        .fifth {
+            padding: 20px;
+        }
+
+        .fifth-name {
+            padding: 5px;
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .fifth-details ul {
+            flex-wrap: wrap;
+            gap: 3px 20px;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+
+      
+
+         .form-container {
+      display: none;
+      margin-top: 10px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="resbody" id="editableBlock">
+        <div class="first ">
+    
+            <div class="first-name" id="displayName">John Doe</div>
+            <div class="first-line"></div>
+            <div class="first-details">
+                <ul>
+                   <li id="displayAddress">City, Country – ZIP Code</li>
+                    <li id="displayContact">+91 12345 67890</li>
+                    <li id="displayEmail">email@example.com</li>
+              </ul>
+            </div>
+
+        </div>
+
+
+
+    <div class="second ">
+        <div class="second-name">Summary</div>
+        <div class="second-details">
+ A short professional summary describing your background, skills, and career goals.
+                Example: "Motivated and detail-oriented professional with experience in web development
+                and a passion for creating user-friendly applications."         </div>
+    </div>
+    <div class="third ">
+        <div class="third-name">Skills</div>
+        <div class="third-details">
+            <ul>
+           <li>HTML, CSS, JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>Git & GitHub</li>
+                    <li>Basic React.js</li>
+                    <li>Problem Solving</li>
+                    <li>API Integration</li>
+                           </ul>
+        </div>
+    </div>
+    <div class="fourth ">
+        <div class="fourth-name">Projects</div>
+        <div class="fourth-details">
+            <ul>
+                  <li>Project Title 1 – Short description of the project and the technologies used.</li>
+                    <li>Project Title 2 – Short description of the project and the technologies used.</li>
+               </ul>
+        </div>
+    </div>
+    <div class="fifth ">
+        <div class="fifth-name">Education</div>
+        <div class="fifth-details">
+            <ul>
+                 <li>Degree Name – University Name (Year – Year)</li>
+                    <li>Relevant coursework or achievements</li>
+                </ul>
+        </div>
+    </div>
+    </div>
+
+      
+  
+    
+</body>
+
+</html>

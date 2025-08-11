@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .resumeForm{
+            display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+
+        body {
+            /* border: 2px solid red; */
+            background-color: #f9f9f9;
+            
+        }
+
+        .all {
+                border: 3px solid rgb(11, 11, 11);
+    display: flex
+;
+    width: 70vw;
+    margin: 50px auto;
+    justify-content: center;
+        }
+
+        h2 {
+            padding: 20px;
+        }
+
+        .commonfields {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* gap: 20px; */
+        }
+        .head-form{
+           width: 175px;
+        }
+        input{
+           border: 2px solid black;
+        }
+        textarea{
+           border: 2px solid black;
+           height: 80px;
+           width: 180px;
+           padding: 5px;
+        }
+        .desc{
+            padding: 20px;
+            /* display: flex;
+            flex-direction: column; */
+        }
+
+        .basicinfo {
+            display: flex;
+            
+            /* flex-direction: column; */
+
+        }
+        .basic{
+            display: flex;
+            flex-direction: column;
+
+        }
+        /* .desc label {
+            padding: 10px;
+        } */
+        .summary{
+            display: flex;
+
+        }
+        .skills{
+            display: flex;
+        }
+        .education{
+        display: flex;
+        } 
+        .projectdiv{
+display: flex;
+        }
+        .certificatediv{
+display: flex;
+        }
+        .experiencediv{
+display: flex;
+        }
+
+        .uncommon {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center;
+            align-items: center; */
+            gap: 20px;
+            width: 50%;
+        }
+        #afterSubmitOptions{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                padding-bottom: 45px;
+        }
+       /* .previewbButton{
+            height: 52px;
+            margin: 20px;
+            padding: 14px;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 20px;
+        } */
+         #previewBtn{
+               height: 53px;
+    width: 238px;
+    font-size: 20px;
+        background-color: #293ec9;
+    color: white;
+         }
+        .text{
+            /* border: 3px solid red; */
+             background-color: #e1e1e1;
+    height: 71px;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+    background-color: #abb9e1;
+        }
+
+        @media screen and (max-width: 1080px) {
+            .all{
+                        width: 80%;
+                transform: scale(0.5);
+                position: relative;
+        bottom: 135px;
+            }
+         
+        textarea{
+           
+           height: 55px;
+        width: 135px;
+           padding: 5px;
+        }
+        .desc{
+            padding: 10px;
+        }
+        .h2{
+            padding: 10px;
+        }
+        .head-form{
+            width: 135px;
+        }
+       #previewBtn{
+        height: 32px;
+        width: 162px;
+        font-size: 13px;
+                position: relative;
+        bottom: 250px;
+       }
+       .text{
+        font-size: 33px;
+        height: 35px;
+       }
+        }
+
+          @media screen and (max-width: 900px) {
+                    .all{
+                              flex-direction: column;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+         
+        bottom: 204px;
+
+                    }
+                      #previewBtn{
+        
+       bottom: 410px;
+       }
+         .text {
+        font-size: 28px;
+        height: 30px;
+    }
+          }
+           @media screen and (max-width: 600px) {
+            .all{
+                        margin: 0 auto;
+        /* width: 311px; */
+        width: 110vw;
+                bottom: 110px;
+            }
+            .commonfields{
+                  width: 100%;
+            }
+            .uncommon{
+                  width: 100%;
+            }
+                .text {
+        font-size: 20px;
+        height: 12px;
+    }
+      textarea{
+           
+                   height: 45px;
+        width: 84px;
+           padding: 5px;
+        }
+        .desc{
+            padding: 10px;
+        }
+        h2{
+            padding: 5px;
+        }
+        .head-form{
+            width: 120px;
+        }
+         #previewBtn{
+                    bottom: 200px;
+         }
+           }
+
+    </style>
+</head>
+
+<body>
+    <!-- form.html -->
+    <form id="resumeForm">
+        <div class="text">
+            Fill your details
+        </div>
+        <div class="all">
+            <div class="commonfields">
+                <div class="basicinfo">
+                    <div class="head-form">
+                        <h2>Basic Info</h2>
+                    </div>
+                    <div class="desc basic"> <label>Name: <input type="text" id="name" required /></label><br />
+                        <label>Email: <input type="email" id="email" required /></label><br />
+                        <label>Phone: <input type="text" id="phone" required /></label><br />
+                        <label>Address: <input type="text" id="address" required /></label><br />
+                    </div>
+                </div>
+                <div class="summary">
+                    <div class="head-form">
+                        <h2>Summary</h2>
+                    </div>
+                    <div class="desc"> <textarea id="summary" rows="4"></textarea><br /></div>
+                </div>
+                <div class="skills">
+                    <div class="head-form">
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="desc"> <textarea id="skills"
+                            placeholder="Comma-separated (e.g. HTML, CSS, JS)"></textarea><br /></div>
+                </div>
+
+                <div class="education">
+                    <div class="head-form">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="desc"> <textarea id="education" placeholder="List your education info"></textarea><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="uncommon">
+
+                <div class="projectdiv">
+                    <div class="head-form">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="desc"><textarea id="projects" placeholder="Write each project on a new line.&#10;e.g.&#10;• Project1 &#10;• Project2"></textarea><br />
+                    </div>
+                </div>
+
+                <div class="certificatediv">
+                    <div class="head-form">
+                        <h2>Certificates (optional)</h2>
+                    </div>
+                    <div class="desc"><textarea id="certificates"
+                            placeholder="Write each certificate on a new line.&#10;e.g.&#10;• Project1 &#10;• Project2"></textarea><br /> </div>
+                </div>
+
+                <div class="experiencediv">
+                    <div class="head-form">
+                        <h2>Experience (optional)</h2>
+                    </div>
+                    <div class="desc"> <textarea id="experience" placeholder="Write each pexperience on a new line.&#10;e.g.&#10;• Project1 &#10;• Project2"></textarea><br />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <button type="submit">Save & View Resume</button> -->
+
+        <div id="afterSubmitOptions">
+            <!-- <button id="saveBtn">💾 Save</button> -->
+            <button id="previewBtn" type="button" class="previewButton">💾 Save 👁️ Preview</button>
+            <!-- <button class="downloadbutton-common" id="downloadBtn">⬇️ Download</button> -->
+        </div>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,1007 @@
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+
+      * {
+          font-family: "Roboto", sans-serif;
+      }
+
+      .border {
+          border: 2px solid red;
+      }
+
+      .page1 {
+          display: block;
+          /* display: none; */
+
+      }
+
+      #name img {
+
+          height: 31px;
+          width: 32px;
+          border-radius: 29px;
+          padding: 2px;
+          position: absolute;
+          top: 8px;
+          left: 8px;
+
+      }
+
+      /* #name{
+            margin-top: 8px;
+    margin-left: 8px;
+      } */
+      #inname {
+          position: absolute;
+          top: 13px;
+          left: 40px;
+          font-size: 19px;
+          font-weight: bold;
+          padding-left: 8px;
+
+      }
+
+
+      .top {
+          display: flex;
+          width: 100vw;
+          height: 600px;
+          /* background-color: #dfe3e2; */
+      }
+
+      .left {
+          width: 45vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 20px;
+      }
+
+
+      .right {
+          width: 55vw;
+          position: relative;
+          /* left: 95px;
+            top: 25px; */
+
+      }
+
+
+      .toprightimg {
+          width: 500px;
+          /* height: 200px; */
+          position: relative;
+          left: 6vw;
+          /* top: 30px;
+            left: 90px; */
+      }
+
+
+      .headpara {
+          font-size: 45px;
+          padding: 10px;
+          margin: 10px 0;
+      }
+
+      .para {
+          font-size: 20px;
+          padding: 10px
+      }
+
+      .getstart {
+          height: 10vh;
+          width: 20vw;
+          margin-top: 10px;
+          font-size: 25px;
+          border: none;
+          color: white;
+          background-color: blue;
+      }
+
+      .break {
+          height: 7px;
+          background-color: #ece9e9;
+          /* background-color: #a3b9b9; */
+      }
+
+      .middle {
+          height: 448px;
+          display: flex;
+          /* background-color: #dfe3e2; */
+          position: relative;
+          top: 50px;
+
+      }
+
+      .middleleft {
+          /* height: 450px; */
+          position: relative;
+          width: 45vw;
+          left: 20px;
+      }
+
+      .midimg-img {
+          border-radius: 135px;
+          position: relative;
+          left: 100px;
+      }
+
+      .image-wrapper {
+          border: 2px solid white;
+          box-shadow: 4px 4px 30px rgba(10, 2, 2, 0.15);
+          /* X Y Blur Color */
+          position: relative;
+          /* left: 20px; */
+          left: 24vw;
+          bottom: 42vh;
+          width: 230px;
+          height: 293px;
+          overflow: hidden;
+      }
+
+      .slide-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transform: translateX(100%);
+          /* Start from right */
+          object-fit: cover;
+          animation: slideInFromRight 1s forwards;
+      }
+
+      .img1 {
+          animation-delay: 0s;
+          z-index: 1;
+      }
+
+      .img2 {
+          animation-delay: 2s;
+          z-index: 2;
+      }
+
+      .img3 {
+          animation-delay: 4s;
+          z-index: 3;
+      }
+
+      @keyframes slideInFromRight {
+          0% {
+              transform: translateX(100%);
+              opacity: 0;
+          }
+
+          50% {
+              transform: translateX(-10%);
+              opacity: 0.8;
+          }
+
+          100% {
+              transform: translateX(0%);
+              opacity: 1;
+          }
+      }
+
+
+      .midlemidle {
+          width: 80px;
+
+      }
+
+      .middleright {
+          width: 55vw;
+          height: 600px;
+          position: relative;
+          left: 30px;
+
+      }
+
+      .f {
+          display: flex;
+          padding: 5px 5px 5px 0;
+          height: 64px;
+          /* border: 1px solid blue; */
+          border-radius: 74px;
+          margin: 10px;
+      }
+
+      .circle {
+          /* background-color: #d0d0c3; */
+          width: 70px;
+          height: 69px;
+          position: relative;
+          /* bottom: 2px; */
+          bottom: 4px;
+          border-radius: 69px;
+
+      }
+
+      /* .circleside{
+            /* background-color: pink; */
+
+      .uppertitle {
+          font-size: 22px;
+          padding: 4px;
+          font-weight: bold;
+      }
+
+      .lowertitle {
+          padding: 0 20px 10px;
+          font-size: 12px;
+
+      }
+
+      .faq {
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+      }
+
+      .faq>div {
+          font-size: 40px;
+      }
+
+      .box {
+          height: 8vh;
+          width: 60vw;
+          margin: 5px;
+
+      }
+
+      .last {
+          margin: 50px;
+          height: 8vh;
+          border: 1px solid red;
+          /* background-color: #a3b9b9; */
+      }
+
+      .page2 {
+          height: 100%;
+          overflow: hidden;
+          /* height: 100vh;
+            width: 100vw; */
+          /* overflow-x: hidden; */
+          /* margin: 20px; */
+          /* margin: calc(); */
+          display: none;
+          background-color: #f9f9f9;
+          /* display: block; */
+      }
+
+      .templates {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          padding: 50px 20px;
+
+
+      }
+
+      .head {
+          height: 62px;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #abb9e1;
+      }
+
+      .head h2 {
+          font-size: 32px;
+          padding: 13px;
+      }
+
+      .template {
+          /* height: 350px;
+            width: 270px;
+            overflow: hidden; */
+          position: relative;
+          background-color: white;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+          border: 2px solid rgb(168, 171, 167);
+
+          width: 280px;
+          height: 396px;
+          /* width: 398px;
+    height: 562px; */
+          /* transform: scale(0.5);       or 0.6 depending on space */
+          /* transform-origin: top left; */
+          /* overflow: hidden; */
+      }
+
+      .template-frame {
+          overflow: hidden;
+          width: 794px;
+          height: 1125px;
+          border: none;
+          transform: scale(0.35);
+          /* You can tweak this between 0.45–0.6 */
+          transform-origin: top left;
+          pointer-events: none;
+      }
+
+      .choosebtn {
+
+          width: 142px;
+          height: 42px;
+          /* position: relative; */
+          position: absolute;
+          top: 324px;
+          /* color: #fefefe; */
+          font-size: 18px;
+          border: none;
+          background: #b6b6b6;
+          left: 144px;
+          /* width: 110px;
+            height: 35px;
+            /* position: relative; */
+          /* position: absolute;
+            top: 301px;
+            left: 134px; */
+          border-radius: 20px;
+          transform: translate(-50%, 20px);
+          /* Moves button down by 20px */
+          opacity: 0;
+
+          pointer-events: none;
+          /* Cannot be clicked */
+          transition: transform 1s ease, opacity 1s ease;
+      }
+
+      .template:hover .choosebtn {
+          transform: translate(-50%, 0);
+          /* Slide to original position */
+          opacity: 1;
+          z-index: 99;
+          cursor: pointer;
+          pointer-events: auto;
+          color: white;
+          background-color: #262695;
+      }
+
+      .page3 {
+          display: none;
+          /* display: flex; */
+
+          flex-direction: column;
+          gap: 10px;
+          /* display: block; */
+          /* height: 98vh; */
+          margin: 4px;
+          background-color: #f9f9f9;
+          flex-direction: column;
+      }
+
+      .back-page3 {
+          height: 25px;
+          width: 93px;
+          padding: 5px;
+      }
+
+      .backpage {
+          width: 95px;
+          height: 28px;
+          border: none;
+          background-color: #f0f0f0;
+      }
+
+      .disc {
+          /* padding: 0 auto; */
+          background-color: #abb9e1;
+          text-align: center;
+          height: 5vh;
+          font-size: 40px;
+          font-weight: bold;
+          padding: 30px 30px 50px 30px;
+
+      }
+
+      .tempimage {
+          width: 210mm;
+          min-height: 297mm;
+          display: block;
+          /* width: 580px;
+            height: 740px; */
+          /* display: flex;
+            align-items: center; */
+          justify-content: center;
+          margin: 0 auto;
+          padding-top: 40px;
+          padding-bottom: 30px;
+      }
+
+
+      .template-frame-page3 {
+          width: 210mm;
+          min-height: 297mm;
+          /* width: 580px;
+            height: 740px; */
+          /* Prevent movement */
+          margin: 0;
+          /* center horizontally */
+          display: block;
+
+          overflow: hidden;
+          /* prevent internal scrollbars */
+          pointer-events: none;
+          /* optional: disables interaction if needed */
+          border: 3px solid black;
+          position: relative;
+          top: 0;
+          left: 0;
+      }
+
+      .edit {
+          height: 10vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 30px;
+      }
+
+      .editbtn {
+          height: 66px;
+          width: 181px;
+          border: none;
+          padding: 20px 30px;
+          border-radius: 31px;
+          font-size: 22px;
+          background-color: #4646a5;
+          color: white;
+
+      }
+
+      .page4 {
+          display: none;
+          flex-direction: column;
+          /* display: flex; 
+
+           display: block; */
+      }
+
+
+
+      .page5 {
+          background-color: #f9f9f9;
+          display: none;
+          /* display: block;
+            display: flex; */
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          /* align-items: stretch; */
+      }
+
+      .back-page5 {
+          height: 25px;
+          width: 93px;
+          padding: 5px;
+          position: relative;
+          right: 44%;
+      }
+
+
+
+      #resume {
+          width: 793px;
+          height: 1122px;
+          overflow: hidden;
+          break-inside: avoid;
+          page-break-inside: avoid;
+          page-break-after: avoid;
+      }
+
+      .resumeContainer {
+          width: 210mm;
+          min-height: 297mm;
+          /* height: 740px;
+            width: 580px; */
+          /* padding: 20mm; */
+          background: white;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-sizing: border-box;
+          overflow: hidden;
+          margin: auto;
+          /* margin-top: 25px;
+            border: 2px solid black;
+               box-shadow: 3px 3px 25px 3px black; */
+
+
+      }
+
+      .downloadbtn {
+          height: 58px;
+          width: 203px;
+          margin-left: 20px;
+          margin: 40px 0;
+
+          /* border: 2px solid black; */
+          box-shadow: 3px 3px 25px 3px black;
+      }
+
+
+
+      #download {
+          height: 58px;
+          width: 203px;
+          font-size: 24px;
+          background-color: rgb(96 181 92);
+          color: white;
+          border: none;
+      }
+
+
+      @media screen and (max-width: 1080px) {
+          .top {
+              height: 895px;
+              width: 100vw;
+              flex-direction: column;
+              /* justify-content: center; */
+              align-items: center;
+          }
+
+          .left {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }
+
+          .para {
+              padding: 10px 40px;
+          }
+
+          .getstart {
+              width: 222px;
+              height: 50px;
+              margin-top: 52px;
+          }
+
+          .right {
+              /* height: 600px; */
+              height: 480px;
+              /* display: flex; */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+          }
+
+          .image-wrapper {
+              top: 134px;
+              left: -70px;
+              height: 235px;
+              width: 200px;
+
+          }
+
+          .middle {
+              width: 100vw;
+              height: 1045px;
+              flex-direction: column;
+              /* justify-content: center; */
+              align-items: center;
+          }
+
+          .middleright {
+              width: 65vw;
+              display: flex;
+              flex-direction: column;
+              /* align-items: center; */
+              justify-content: center;
+
+          }
+
+          .middleleft {
+              width: 100vw;
+          }
+
+          .midimg {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+
+          .midimg-img {
+              left: 0;
+          }
+
+          .toprightimg {
+              width: 400px;
+              left: 95px;
+          }
+
+          .left {
+              width: 100vw;
+          }
+
+          .right {
+              width: 100vw;
+          }
+
+          .f {
+              height: 70px;
+          }
+
+          .templates {
+              flex-direction: column;
+          }
+
+
+          .disc {
+              font-size: 32px;
+          }
+
+          .tempimage {
+              /* margin: 0 auto; */
+              /* width: 400px;
+        overflow-x: hidden; */
+              /* margin: 0 auto; */
+              text-align: center;
+              margin: 0 auto;
+          }
+
+      }
+
+      @media screen and (max-width: 820px) {
+          .template-frame-page3 {
+              transform: scale(0.5);
+              /* Adjust scale factor if needed */
+              transform-origin: top left;
+          }
+
+          .editbtn {
+              position: absolute;
+              top: 800px;
+              padding: 10px 30px;
+              height: 50px;
+              width: 123px;
+          }
+
+          /* .resumeContainer {
+                transform: scale(0.5);
+              
+                transform-origin: top left;
+            }
+         */
+
+
+          /* .downloadbtn{
+            position: relative;
+        bottom: 513px;
+            height: 45px;
+    width: 182px;
+        }
+
+        #download{
+             height: 45px;
+    width: 182px;
+        } */
+
+          .para {
+              padding: 10px 30px;
+          }
+
+
+          .resumeWrapper {
+              transform: scale(0.65);
+              position: relative;
+
+
+              bottom: 153px;
+          }
+
+
+          .page5 {
+              padding: 10px;
+
+          }
+
+          .downloadbtn {
+              position: relative;
+              bottom: 342px;
+
+              /* height: 30px; */
+              margin-bottom: 30px;
+          }
+
+          #download {
+              font-size: 16px;
+              padding: 10px 20px;
+          }
+
+
+          .page4 {
+              height: 580px;
+              overflow-y: hidden;
+          }
+
+          .back-page4 {
+              height: 25px;
+              width: 93px;
+              padding: 5px;
+          }
+
+          .page3temp-img {
+              width: 400px;
+              position: relative;
+              right: 8px;
+          }
+
+          .page3 {
+              /* width: 100vw; */
+              overflow-y: hidden;
+              overflow-x: hidden;
+              height: 900px;
+              width: 806px;
+          }
+
+          .tempimage {
+              display: flex;
+              justify-content: center;
+              overflow-y: hidden;
+          }
+
+          /* .page5{
+                    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+        } */
+
+      }
+
+      /* #download {
+            
+        position: relative;
+        bottom: 470px;
+    
+        } */
+
+
+
+      @media screen and (max-width: 675px) {
+          .page1 {
+              padding: 5px;
+          }
+
+          .top {
+              width: 100vw;
+              height: 885px;
+          }
+
+          .left {
+              height: 400px;
+          }
+
+          .para {
+              padding: 10px 20px;
+          }
+
+          .getstart {
+              width: 257px;
+              height: 67px;
+          }
+
+          .right {
+              width: 100vw;
+              height: 390px;
+          }
+
+          .toprightimg {
+              width: 310px;
+              left: 59px;
+              bottom: 31px;
+          }
+
+          .image-wrapper {
+              height: 160px;
+              width: 116px;
+              /* bottom: 47px; */
+              top: 70px;
+          }
+
+          .middleright {
+              width: 100vw;
+          }
+
+          .uppertitle {
+              font-size: 18px;
+          }
+
+          .lowertitle {
+              font-size: 12px;
+          }
+
+          .head h2 {
+              font-size: 24px;
+          }
+
+          .head h4 {
+              font-size: 12px;
+          }
+
+          .editbtn {
+              position: absolute;
+                      top: 805px;
+              padding: 10px 30px;
+              height: 50px;
+              width: 123px;
+          }
+
+
+
+
+          .resumeWrapper {
+              transform: scale(0.38);
+              position: relative;
+
+
+              bottom: 325px;
+          }
+
+          .downloadbtn {
+              margin-top: 25px;
+              height: 32px;
+              width: 131px;
+              position: relative;
+              bottom: 565px;
+          }
+
+          #download {
+              height: 32px;
+              width: 131px;
+              font-size: 15px;
+              padding: 8px 18px;
+          }
+
+
+
+
+      }
+
+      @media screen and (max-width: 425px) {
+          .left {
+              height: 490px;
+          }
+
+          .para {
+              padding: 10px 20px;
+          }
+
+          .getstart {
+              width: 218px;
+              height: 49px;
+
+          }
+
+          .toprightimg {
+              left: 20px;
+          }
+
+          .image-wrapper {
+              height: 104px;
+              width: 80px;
+              min-width: 80px;
+              left: -130px;
+          }
+
+          .midimg-img {
+              width: 288px;
+              height: 269px;
+              border-radius: 59px
+          }
+
+          .middleleft {
+              left: 0;
+          }
+
+          .head h2 {
+              font-size: 14px;
+          }
+
+          .head h4 {
+              font-size: 8px;
+          }
+
+          .template-frame-page3 {
+              transform: scale(0.7);
+
+              transform-origin: top left;
+          }
+
+          .page3temp-img {
+              /* width: 201px; */
+              position: relative;
+              right: 76px;
+          }
+
+          .page3 {
+              height: 1050px;
+          }
+
+          .editbtn {
+              position: absolute;
+              top: 975px;
+          }
+
+
+          .disc {
+              font-size: 22px;
+              height: 4px;
+          }
+
+          /* .resumeContainer{
+              transform: scale(0.3);
+                
+                transform-origin: top left;   
+            } */
+          /* .downloadbtn{
+               height: 30px;
+        width: 116px;
+                position: relative;
+        bottom: 755px;
+            }
+
+            #download{
+                        height: 30px;
+        width: 116px;
+        font-size: 14px;
+            } */
+          .editbtn {
+              position: absolute;
+                     top: 996px;
+              padding: 5px 15px;
+              height: 37px;
+              width: 103px;
+          }
+
+          .resumeWrapper {
+              transform: scale(0.32);
+              position: relative;
+
+
+              bottom: 350px;
+          }
+
+          .page5 {
+              padding: 5px;
+          }
+
+          .downloadbtn {
+              margin-top: 20px;
+              width: 110px;
+              height: 29px;
+              position: relative;
+              bottom: 608px;
+          }
+
+          #download {
+              font-size: 14px;
+              padding: 6px 16px;
+              width: 110px;
+              height: 29px;
+          }
+
+
+
+      }

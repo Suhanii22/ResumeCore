@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+        }
+        .border {
+            border: 1px solid black;
+        }
+
+        .resbody3 {
+              width: 210mm;
+  min-height: 297mm;
+            /* width: 580px;
+            height: 740px; */
+        }
+        .namebar{
+                height: 60px;
+    padding: 16px;
+    font-size: 44px;
+    font-weight: bold;
+    display: flex
+    
+;
+border-bottom: 1px solid black;
+    /* align-items: center; */
+    justify-content: center;
+        }
+        .details{
+            display: flex;
+            height: 690px;
+            
+        }
+        .column1{
+            width: 234px;
+                    height: 1030px;
+         border-right: 1px solid black;
+            /* padding: 5px; */
+        }
+        .column2{
+                width: 561px;
+                    height: 1030px;
+        }
+
+        .first{
+            padding: 20px;
+        }
+
+         .first-name {
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+         .first-details ul {
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+             gap: 3px 20px;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+        .third{
+            padding: 20px;
+        }
+         .third-name {
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .third-details ul {
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            gap: 3px 20px;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+
+        .second{
+            padding: 20px;
+        }
+        .second-name {
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .second-details {
+            font-size: 18px;
+             word-wrap: break-word;   /* Break long words if needed */
+  white-space: pre-wrap;   /* Respect line breaks */
+  overflow-wrap: break-word;
+        }
+        .seven{
+           padding: 20px;
+        }
+         .seven-name {
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .seven-details {
+            font-size: 18px;
+        }
+
+        .fifth{
+            padding: 20px;
+        }
+         .fifth-name {
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .fifth-details ul {
+            flex-wrap: wrap;
+            gap: 3px 20px;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="resbody3  ">
+        <div class="namebar " id="displayName">
+               John Doe
+        </div>
+        <div class="details ">
+            <div class="column1">
+                <div class="first ">
+                    <div class="first-name">Contact</div>
+                     <div class="first-details">
+                    <ul>
+                       <li id="displayAddress">City, Country – ZIP Code</li>
+                            <li id="displayContact">+91 12345 67890</li>
+                            <li id="displayEmail">email@example.com</li>
+                        </ul>
+                </div>
+                </div>
+                <div class="third ">
+                     <div class="third-name">Skills</div>
+                <div class="third-details">
+                    <ul>
+                         <li>HTML, CSS, JavaScript</li>
+                            <li>Responsive Web Design</li>
+                            <li>React.js Basics</li>
+                            <li>Git & GitHub</li>
+                            <li>Problem Solving</li>
+                            <li>API Integration</li>
+                            <li>UI/UX Principles</li>
+                            <li>Version Control</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="second">
+                     <div class="second-name">Summary</div>
+                <div class="second-details">
+                     Motivated and detail-oriented professional with a passion for web development and design.
+                        Skilled in building responsive, user-friendly interfaces and eager to contribute to creative
+                        projects while continuously learning and improving technical expertise.
+                    </div>
+                </div>
+                <div class="seven ">
+                    <div class="seven-name">Experience</div>
+                    <div class="seven-details">
+                  <p>Front-End Developer – ABC Company (2021 – Present)<br>
+                        Developed and maintained user-facing web applications, optimized performance, and collaborated
+                        with designers to create engaging UI experiences.</p>
+
+                        <p>Intern – Web Development – XYZ Solutions (2020 – 2021)<br>
+                        Assisted in coding and testing websites, implemented responsive layouts, and worked with
+                        APIs for dynamic content integration.</p>
+                     </div>
+                </div>
+                <div class="fifth ">
+                     <div class="fifth-name">Education</div>
+                <div class="fifth-details">
+                    <ul>
+                       <li>Bachelor of Technology in Computer Science – University Name (2017 – 2021)</li>
+                            <li>Relevant Coursework: Web Development, Database Systems, Software Engineering</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
